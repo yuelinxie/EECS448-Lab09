@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3: Web Store</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Yuelin Xie">
+        <meta name="description" content="Exercise 3: Web Store">
+        <link href = "myStyle.css" rel="stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <form action="customerBackend.php" method="POST" id="form">
+            <h1>
+                Web Store
+            </h1>
+            <p>
+                Please give us your username and password. (Username must be in the form of an email address)
+            </p>
+            Username<input type = "email" name = "email" id = "email" required><br>
+            Password<input type = "password" name = "password" id = "password" required><br>
+            <br><br>
+
+            <p>
+                Hello, What do you want to buy today?<br>
+                If you don't want to buy someone, Please fill in 0 in the quantity!
+            </p>
+            Steam Eye Mask($1/count)<input type="number" name="eyeMask" id="eyeMask" required min="0"><br>
+            Face Mask($0.2/count)<input type="number" name="faceMask" id="faceMask" required min="0"><br>
+            Facial Tissue($1.5/box)<input type="number" name="facTissue" id="facTissue" required min="0"><br>
+            <br><br>
+
+            <p>
+                What type of shipping do you like?
+            </p>
+            <input type = "radio" id = "Free 7 day" name = "shipping" value="Free 7 day" required>
+            <label for="Free 7 day">Free 7 day
+            <input type = "radio" id = "$50.00 over night" name = "shipping" value="$50.00 over night" required>
+            <label for="$50.00 over night">$50.00 over night
+            <input type = "radio" id = "$5.00 three day" name = "shipping" value="$5.00 three day" required>
+            <label for="$5.00 three day">$5.00 three day
+            <br><br>
+
+            <input type = "reset">
+            <input type = "submit">
+
+        </form>
+        <script src="formChecker.js"></script>
+    </body>
+</html>
